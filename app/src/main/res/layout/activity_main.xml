@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listview"
+        android:scrollbars="vertical"
+        android:layout_marginTop="12dp"
+        tools:listitem="@layout/list_item"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10.0sp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <!-- tools:listitem="@layout/list_item"  Цей атрибут робить роздільник між елементами прозорим. Оскільки колір роздільника встановлено в прозорий, сам роздільник не буде видимим.-->
+<!--tools:listitem="@layout/list_item":
+
+Цей атрибут використовується лише в режимі розробки (в Android Studio) і вказує на макет елемента списку, який буде використовуватися для попереднього перегляду. Це не впливає на кінцеву програму, а тільки допомагає розробникам побачити,
+ як елементи списку будуть виглядати під час створення макету.-->
+
+<!--android:dividerHeight="10.0sp":
+
+Цей атрибут задає висоту роздільника між елементами списку. У даному випадку висота роздільника становить 10 sp (scale-independent pixels). -->
